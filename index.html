@@ -1405,65 +1405,116 @@
                     messagingSenderId: "526944315086"
                 },
                 _companyData = {
-                    ActivationDate: void 0,
-                    DeactivationDate: void 0,
-                    emailSender: void 0,
-                    emailPassword: void 0,
-                    email_from: void 0,
-                    email_to: void 0,
+                    //ActivationDate: void 0,
+                    //DeactivationDate: void 0,
+                    //emailSender: void 0,
+                    //emailPassword: void 0,
+                    //email_from: void 0,
+                    //email_to: void 0,
+                    //address: void 0,
+                    //apiUrlBase: void 0,
+                    //branchId: void 0,
+                    //branchName: void 0,
+                    //branchStatus: void 0,
+                    //latitude: void 0,
+                    //license: void 0,
+                    //longitude: void 0,
+                    //phoneContact: void 0,
+                    //site: void 0,
+                    //twitter_oauth_consumer_key: void 0,
+                    //twitter_oauth_consumer_secret: void 0,
+                    //twitter_oauth_token: void 0,
+                    //twitter_oauth_token_secret: void 0,
+                    //twitter_user: void 0,
+                    //usersFile: void 0,
+                    //usersFileDate: void 0,
+                    //beepError: void 0,
+                    activated: void 0,
                     address: void 0,
                     apiUrlBase: void 0,
+                    beepError: void 0,
                     branchId: void 0,
                     branchName: void 0,
                     branchStatus: void 0,
+                    deactivated: void 0,
+                    emailPassword: void 0,
+                    emailSender: void 0,
+                    email_from: void 0,
+                    email_to: void 0,
                     latitude: void 0,
                     license: void 0,
                     longitude: void 0,
                     phoneContact: void 0,
                     site: void 0,
+                    soldBudgetWk: void 0,
+                    soldLastYearWk: void 0,
                     twitter_oauth_consumer_key: void 0,
                     twitter_oauth_consumer_secret: void 0,
                     twitter_oauth_token: void 0,
                     twitter_oauth_token_secret: void 0,
                     twitter_user: void 0,
                     usersFile: void 0,
-                    usersFileDate: void 0,
-                    beepError: void 0,
                     keySecret: "uUBrOmC7uwO6DOW8Vu5dsNZEk3JFzXE9Y0KCsN1o",
                     init: function (p) {
                         try {
                             $.ajaxSetup({ async: false });
                             if (p !== "") {
-                                $.getJSON(_sbBaseUrl + "branches/" + p + "/.json?auth=" + keySecret).success(function (c) {
+                                $.getJSON(_sbBaseUrl + "branches/" + p + "/.json?auth=" + this.keySecret).success(function (c) {
                                     if (c != "" && c != null) {
-                                        ActivationDate = c.ActivationDate,
-                                        DeactivationDate = c.DeactivationDate,
-                                        emailSender = c.emailSender,
-                                        emailPassword = c.emailPassword,
-                                        email_from = c.email_from,
-                                        email_to = c.email_to,
-                                        address = c.address,
-                                        apiUrlBase = c.apiUrlBase,
-                                        branchId = c.branchId,
-                                        branchName = c.branchName,
-                                        branchStatus = c.branchStatus,
-                                        latitude = c.latitude,
-                                        license = c.license,
-                                        longitude = c.longitude,
-                                        phoneContact = c.phoneContact,
-                                        site = c.site,
-                                        twitter_oauth_consumer_key = c.twitter_oauth_consumer_key,
-                                        twitter_oauth_consumer_secret = c.twitter_oauth_consumer_secret,
-                                        twitter_oauth_token = c.twitter_oauth_token,
-                                        twitter_oauth_token_secret = c.twitter_oauth_token_secret,
-                                        twitter_user = c.twitter_user,
-                                        usersFile = c.usersFile,
-                                        usersFileDate = c.usersFileDate,
-                                        beepError = c.beepError
-                                    };
-                                }).then(function () {
-                                    if (c !== "")
+                                        //this.ActivationDate = c.ActivationDate;
+                                        //this.DeactivationDate = c.DeactivationDate;
+                                        //this.emailSender = c.emailSender;
+                                        //this.emailPassword = c.emailPassword;
+                                        //this.email_from = c.email_from;
+                                        //this.email_to = c.email_to;
+                                        //this.address = c.address;
+                                        //this.apiUrlBase = c.apiUrlBase;
+                                        //this.branchId = c.branchId;
+                                        //this.branchName = c.branchName;
+                                        //this.branchStatus = c.branchStatus;
+                                        //this.latitude = c.latitude;
+                                        //this.license = c.license;
+                                        //this.longitude = c.longitude;
+                                        //this.phoneContact = c.phoneContact;
+                                        //this.site = c.site;
+                                        //this.twitter_oauth_consumer_key = c.twitter_oauth_consumer_key;
+                                        //this.twitter_oauth_consumer_secret = c.twitter_oauth_consumer_secret;
+                                        //this.twitter_oauth_token = c.twitter_oauth_token;
+                                        //this.twitter_oauth_token_secret = c.twitter_oauth_token_secret;
+                                        //this.twitter_user = c.twitter_user;
+                                        //this.usersFile = c.usersFile;
+                                        //this.usersFileDate = c.usersFileDate;
+                                        //this.beepError = c.beepError
+                                        this.activated = c.activated;
+                                        this.address = c.address;
+                                        this.apiUrlBase = c.apiUrlBase;
+                                        this.beepError = c.beepError;
+                                        this.branchId = c.branchId;
+                                        this.branchName = c.branchName;
+                                        this.branchStatus = c.branchStatus;
+                                        this.deactivated = c.deactivated;
+                                        this.emailPassword = c.emailPassword;
+                                        this.emailSender = c.emailSender;
+                                        this.email_from = c.email_from;
+                                        this.email_to = c.email_to;
+                                        this.latitude = c.latitude;
+                                        this.license = c.license;
+                                        this.longitude = c.longitude;
+                                        this.phoneContact = c.phoneContact;
+                                        this.site = c.site;
+                                        this.soldBudgetWk = c.soldBudgetWk;
+                                        this.soldLastYearWk = c.soldLastYearWk;
+                                        this.twitter_oauth_consumer_key = c.twitter_oauth_consumer_key;
+                                        this.twitter_oauth_consumer_secret = c.twitter_oauth_consumer_secret;
+                                        this.twitter_oauth_token = c.twitter_oauth_token;
+                                        this.twitter_oauth_token_secret = c.twitter_oauth_token_secret;
+                                        this.twitter_user = c.twitter_user;
+                                        this.usersFile = c.usersFile;
+                                    }
+                                }).then(function (c) {
+                                    if (c !== "") {
                                         console.log("load successful CompanyData");
+                                    }
                                 });
                             }
                             $.ajaxSetup({ async: true });
@@ -1533,7 +1584,7 @@
                         form: "frm" + _funciones[7] + "List",
                         controller: _funciones[7].toLowerCase() + "list"
                     }
-                },                
+                },
                 routeTo = function (route) {
                     window.location.href = '#/' + route;
                 },
@@ -1557,7 +1608,7 @@
                 //    });
                 //    $.ajaxSetup({ async: true });
                 //},
-                getScript = function (p) {
+                getHtmlScript = function (p) {
                     $.ajaxSetup({ async: false });
                     var result = "";
                     if (p !== "") {
@@ -1599,6 +1650,27 @@
                     $.ajaxSetup({ async: true });
                     return result;
                 },
+
+                /////////////
+                getJavaScript = function (p) {                          // p <- scriptName
+                    //var scriptName = "modernizr283";
+                    $.ajaxSetup({ async: false });
+                    //$.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
+                    $.getJSON(_sbResourcesUrl + "/js/" + p + ".json?auth=" + _companyData.keySecret).success(function (a) {
+                        var x = document.createElement("SCRIPT");
+                        var t = document.createTextNode(a);
+                        x.type = "text/javascript";
+                        x.id = p;
+                        x.appendChild(t);
+                        document.head.appendChild(x);
+                    }).then(function () {
+                        //console.log("load successful " + p);
+                        document.getElementById('loadingContent').innerHTML = 'Loading ... ' + p + ' ... ';
+                    });
+                    $.ajaxSetup({ async: true });
+                },
+                /////////////
+
                 getLangCurrently = function () {
                     return _languagesCod.toString().substring(_languagesCod.toString().indexOf("," + _userLang) + 1, _languagesCod.toString().indexOf("," + _userLang) + 6);
                 },
@@ -1816,14 +1888,14 @@
                         strN2 = strN1.indexOf(" ") > 0 ? strN1.substring(0, strN1.indexOf(" ")).capitalize() : strN1.substring(0).capitalize();
                     }
 
-                    //var a = getScript("/html/menu/head/");
-                    var a = getScript("html/menu/head/");
+                    //var a = getHtmlScript("/html/menu/head/");
+                    var a = getHtmlScript("html/menu/head/");
                     //a = a.replace("+imgLogo2+", _companyData.ilg2).replace("+strN1+", strN1).replace("+strN2+", strN2);
                     a = a.replace("+imgLogo2+", getImage("/img/logo2")).replace("+strN1+", strN1).replace("+strN2+", strN2);
                     html.push(a);
 
                     // menú Opciones según usertype
-                    a = getScript("html/menu/options/" + usertype);
+                    a = getHtmlScript("html/menu/options/" + usertype);
                     html.push(a);
 
                     return html.join("");
@@ -1832,7 +1904,7 @@
                     // cargar form en div.id="container"
                     var html = [];
 
-                    var a = getScript("html/" + formName);
+                    var a = getHtmlScript("html/" + formName);
                     html.push(a);
 
                     // -- ALERT BOX --
@@ -2530,8 +2602,9 @@
                                 var c = parseInt($("#txtQuantity").val()) + 1;
                                 $("#txtQuantity").val(c);
                             } else {
-                                var audio = new Audio(getImage("/sounds/beep0"));
-                                audio.play();
+                                //var audio = new Audio(getImage("/sounds/beep0"));
+                                //audio.play();
+                                $("#txtQuantity").val(1);
                             }
                         });
                         $("#toDown").on("click", function (e) {
@@ -2540,8 +2613,9 @@
                                 var c = parseInt($("#txtQuantity").val()) - 1;
                                 $("#txtQuantity").val(c);
                             } else {
-                                var audio = new Audio(getImage("/sounds/beep0"));
-                                audio.play();
+                                //var audio = new Audio(getImage("/sounds/beep0"));
+                                //audio.play();
+                                $("#txtQuantity").val(20);
                             }
                         });
                         break;
@@ -2560,15 +2634,19 @@
                                     imgDown = getImage("/img/todown");
 
                                 s.push('<span id="btnCancel" class="button b-close">X</span>\n');
-                                s.push('<div id="header"><p id="mp1" style="text-align: center; font-size: 20px; color: #C70039;"> New Intem Shop Floor </p></div>\n');
+                                s.push('<div id="header"><p id="mp1" style="text-align: center; font-size: 20px; color: #C70039;"> New Item Shop Floor </p></div>\n');
                                 s.push('  <div id="mainbody" style="display: inline; text-align: center;">\n');
 
                                 s.push('    <div class="form-group" style="text-align: center;">\n');
-                                s.push('    <input id="cheBoxOnto" type="checkbox" class="pedidoChe" title="Onto" checked /> &nbsp;&nbsp;<span style="font-size: 16px; color: blue;">Onto</span>\n');
+                                //s.push('        <input id="cheBoxOnto" type="checkbox" class="pedidoChe" title="Onto" checked /> &nbsp;&nbsp;<span style="font-size: 16px; color: blue;">Onto</span>\n');
+                                s.push('        <label style="width: 50%; display: inline;" valign="center"><input type="radio" style="height: 15px; width: 15px;" name="ontooff" value="true" checked /> Onto &nbsp;&nbsp;&nbsp;</label>\n');
+                                s.push('        <label style="width: 50%; display: inline;" valign="center"><input type="radio" style="height: 15px; width: 15px;" name="ontooff" value="false" /> Off &nbsp;&nbsp;&nbsp;</label>\n');
                                 s.push('    </div>\n');
 
                                 s.push('    <div class="form-group" style="text-align: center;">\n');
-                                s.push('    <input id="cheBoxHanging" type="checkbox" class="pedidoChe" title="Hanging" /> &nbsp;&nbsp;<span style="font-size: 14px; color: blue;">Hanging</span>\n');
+                                //s.push('        <input id="cheBoxHanging" type="checkbox" class="pedidoChe" title="Hanging" /> &nbsp;&nbsp;<span style="font-size: 14px; color: blue;">Hanging</span>\n');
+                                s.push('        <label style="width: 50%; display: inline;" valign="center"><input type="radio" style="height: 15px; width: 15px;" name="hangingnonhanging" value="true" /> Hanging &nbsp;&nbsp;&nbsp;</label>\n');
+                                s.push('        <label style="width: 50%; display: inline;" valign="center"><input type="radio" style="height: 15px; width: 15px;" name="hangingnonhanging" value="false" checked /> non-Hanging &nbsp;&nbsp;&nbsp;</label>\n');
                                 s.push('    </div>\n');
 
                                 s.push('    <div class="form-group" style="text-align: center;">\n');
@@ -2588,8 +2666,10 @@
                             onClose: function () {
                                 if ("btnSave" === s) {
                                     var ele = {
-                                        onto: $("#cheBoxOnto").is(':checked') ? true : false,
-                                        hanging: $("#cheBoxHanging").is(':checked') ? true : false,
+                                        //onto: $("#cheBoxOnto").is(':checked') ? true : false,
+                                        onto: $("input[name='ontooff']:checked").val() === "true" ? true : false,
+                                        //hanging: $("#cheBoxHanging").is(':checked') ? true : false,
+                                        hanging: $("input[name='hangingnonhanging']:checked").val() === "true" ? true : false,
                                         quantity: parseInt($("#txtQuantity").val()),
                                         week: newKey.substring(0, 4) + "Wk" + zeroPad((new Date(newKey.substring(0, 10)).getWeek()), 2)
                                     }
@@ -2653,8 +2733,9 @@
                                 var c = parseInt($("#txtQuantity").val()) + 1;
                                 $("#txtQuantity").val(c);
                             } else {
-                                var audio = new Audio(getImage("/sounds/beep0"));
-                                audio.play();
+                                //var audio = new Audio(getImage("/sounds/beep0"));
+                                //audio.play();
+                                $("#txtQuantity").val(1);
                             }
                         });
                         $("#toDown").on("click", function (e) {
@@ -2663,8 +2744,9 @@
                                 var c = parseInt($("#txtQuantity").val()) - 1;
                                 $("#txtQuantity").val(c);
                             } else {
-                                var audio = new Audio(getImage("/sounds/beep0"));
-                                audio.play();
+                                //var audio = new Audio(getImage("/sounds/beep0"));
+                                //audio.play();
+                                $("#txtQuantity").val(20);
                             }
                         });
                         break;
@@ -4153,23 +4235,26 @@
             addEvent(window, 'load', function () {
                 loadScript('https://code.jquery.com/jquery-2.2.3.min.js',
                     function () {
-                        var scriptName = "modernizr283";
-                        $.ajaxSetup({ async: false });
-                        $.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
-                            var x = document.createElement("SCRIPT");
-                            var t = document.createTextNode(a);
-                            x.type = "text/javascript";
-                            x.id = scriptName;
-                            x.appendChild(t);
-                            document.head.appendChild(x);
-                            //console.log(scriptName + ": " + a);
-                        }).then(function () {
-                            console.log("load successful " + scriptName);
-                        });
+                        //var scriptName = "modernizr283";
+                        //$.ajaxSetup({ async: false });
+                        //$.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
+                        //    var x = document.createElement("SCRIPT");
+                        //    var t = document.createTextNode(a);
+                        //    x.type = "text/javascript";
+                        //    x.id = scriptName;
+                        //    x.appendChild(t);
+                        //    document.head.appendChild(x);
+                        //    //console.log(scriptName + ": " + a);
+                        //}).then(function () {
+                        //    console.log("load successful " + scriptName);
+                        //});
+                        //$.ajaxSetup({ async: true });
+                        getJavaScript("modernizr283");
 
-                        $.ajaxSetup({ async: true });
-                        loadScript('http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js',
+                        loadScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js',
                             function () {
+                        //getJavaScript("jqueryvalidation");
+
                                 loadScript('https://cdnjs.cloudflare.com/ajax/libs/jQuery-Geolocation/1.0.50/jquery.geolocation.min.js',
                                     function () {
                                         loadScript('https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js',
@@ -4193,60 +4278,59 @@
                                                                                                     function () {
                                                                                                         loadScript('https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.1/platform.min.js',
                                                                                                             function () {
-                                                                                                                var scriptName = "webspeech";
-                                                                                                                $.ajaxSetup({ async: false });
-                                                                                                                $.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
-                                                                                                                    var x = document.createElement("SCRIPT");
-                                                                                                                    var t = document.createTextNode(a);
-                                                                                                                    x.type = "text/javascript";
-                                                                                                                    x.id = scriptName;
-                                                                                                                    x.appendChild(t);
-                                                                                                                    document.head.appendChild(x);
-                                                                                                                }).then(function () {
-                                                                                                                    console.log("load successful " + scriptName);
-                                                                                                                });
-                                                                                                                $.ajaxSetup({ async: true });
+                                                                                                                //var scriptName = "webspeech";
+                                                                                                                //$.ajaxSetup({ async: false });
+                                                                                                                //$.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
+                                                                                                                //    var x = document.createElement("SCRIPT");
+                                                                                                                //    var t = document.createTextNode(a);
+                                                                                                                //    x.type = "text/javascript";
+                                                                                                                //    x.id = scriptName;
+                                                                                                                //    x.appendChild(t);
+                                                                                                                //    document.head.appendChild(x);
+                                                                                                                //}).then(function () {
+                                                                                                                //    console.log("load successful " + scriptName);
+                                                                                                                //});
+                                                                                                                //$.ajaxSetup({ async: true });
+                                                                                                                getJavaScript("webspeech");
 
                                                                                                                 loadScript('https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js',
                                                                                                                     function () {
 
-
-
                                                                               //                                          loadScript('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/3.1.2/jquery.bootstrap-touchspin.min.js',
                                                                               //                                              function () {
 
-
-
                                                                                                                         loadScript('https://www.google.com/jsapi',
                                                                                                                             function () {
-                                                                                                                                var scriptName = "qrcode__";
-                                                                                                                                $.ajaxSetup({ async: false });
-                                                                                                                                $.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
-                                                                                                                                    var x = document.createElement("SCRIPT");
-                                                                                                                                    var t = document.createTextNode(a);
-                                                                                                                                    x.type = "text/javascript";
-                                                                                                                                    x.id = scriptName;
-                                                                                                                                    x.appendChild(t);
-                                                                                                                                    document.head.appendChild(x);
-                                                                                                                                    //console.log(scriptName + ": " + a);
-                                                                                                                                }).then(function () {
-                                                                                                                                    console.log("load successful " + scriptName);
-                                                                                                                                });
+                                                                                                                                //var scriptName = "qrcode__";
+                                                                                                                                //$.ajaxSetup({ async: false });
+                                                                                                                                //$.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
+                                                                                                                                //    var x = document.createElement("SCRIPT");
+                                                                                                                                //    var t = document.createTextNode(a);
+                                                                                                                                //    x.type = "text/javascript";
+                                                                                                                                //    x.id = scriptName;
+                                                                                                                                //    x.appendChild(t);
+                                                                                                                                //    document.head.appendChild(x);
+                                                                                                                                //    //console.log(scriptName + ": " + a);
+                                                                                                                                //}).then(function () {
+                                                                                                                                //    console.log("load successful " + scriptName);
+                                                                                                                                //});
+                                                                                                                                ////                    scriptName = "qrcode_";
+                                                                                                                                ////                    //$.ajaxSetup({ async: false });
+                                                                                                                                ////                    $.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
+                                                                                                                                ////                        var x = document.createElement("SCRIPT");
+                                                                                                                                ////                        var t = document.createTextNode(a);
+                                                                                                                                ////                        x.type = "text/javascript";
+                                                                                                                                ////                        x.id = scriptName;
+                                                                                                                                ////                        x.appendChild(t);
+                                                                                                                                ////                        document.head.appendChild(x);
+                                                                                                                                ////                        //console.log(scriptName + ": " + a);
+                                                                                                                                ////                    }).then(function () {
+                                                                                                                                ////                        console.log("load successful " + scriptName);
+                                                                                                                                ////                    });
+                                                                                                                                //$.ajaxSetup({ async: true });
 
-                                                                                                                                //                    scriptName = "qrcode_";
-                                                                                                                                //                    //$.ajaxSetup({ async: false });
-                                                                                                                                //                    $.getJSON(_sbResourcesUrl + "/js/" + scriptName + ".json?auth=" + _companyData.keySecret).success(function (a) {
-                                                                                                                                //                        var x = document.createElement("SCRIPT");
-                                                                                                                                //                        var t = document.createTextNode(a);
-                                                                                                                                //                        x.type = "text/javascript";
-                                                                                                                                //                        x.id = scriptName;
-                                                                                                                                //                        x.appendChild(t);
-                                                                                                                                //                        document.head.appendChild(x);
-                                                                                                                                //                        //console.log(scriptName + ": " + a);
-                                                                                                                                //                    }).then(function () {
-                                                                                                                                //                        console.log("load successful " + scriptName);
-                                                                                                                                //                    });
-                                                                                                                                $.ajaxSetup({ async: true });
+                                                                                                                                getJavaScript("qrcode__");
+                                                                                                                                //getJavaScript("qrcode_");
 
                                                                                                                                 loadScript('https://cdnjs.cloudflare.com/ajax/libs/jic/2.0.2/JIC.min.js',
                                                                                                                                     function () {
@@ -4289,7 +4373,7 @@
                                                     });
                                             });
                                     });
-                            });
+                        });
                     });
             });
         </script>
