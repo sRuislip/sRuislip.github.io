@@ -1587,7 +1587,10 @@
         .big-circle{-moz-animation:circleEffectOut 1s infinite linear;-o-animation:circleEffectOut 1s infinite linear;-webkit-animation:circleEffectOut 1s infinite linear;animation:circleEffectOut 1s infinite linear;background:rgba(0,0,0,0);border-bottom:10px solid rgba(86,16,36,.7);border-top:10px solid rgba(86,16,36,.7);box-shadow:0 0 35px #105642;height:150px;width:150px}
         .little-circle{-moz-animation:circleEffectIn 1s infinite linear;-o-animation:circleEffectIn 1s infinite linear;-webkit-animation:circleEffectIn 1s infinite linear;animation:circleEffectIn 1s infinite linear;background-color:rgba(0,0,0,0);border-bottom:5px solid rgba(16,86,66,.7);border-top:5px solid rgba(16,86,66,.7);box-shadow:0 0 15px #561024;height:100px;position:relative;top:-125px;width:100px}
         .loading .content{padding:0 10px;position:relative;text-align:left;top:-100px}
-
+		@-moz-keyframes circleEffectOut{ 0%{-moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #105642} 50%{-moz-transform:rotate(145deg); opacity:1}100%{-moz-transform:rotate(-320deg);opacity:0} }
+		@-webkit-keyframes circleEffectOut{ 0%{-webkit-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #105642} 50%{-webkit-transform:rotate(145deg); opacity:1} 100%{-webkit-transform:rotate(-320deg);opacity:0} }
+		@-moz-keyframes circleEffectIn{ 0%{-moz-transform:rotate(0)} 100%{-moz-transform:rotate(360deg)} }
+		@-webkit-keyframes circleEffectIn{ 0%{-webkit-transform:rotate(0)} 100%{-webkit-transform:rotate(360deg)} }
     </style>
     <style type="text/css">
         body{padding-top:0;padding-bottom:0}
